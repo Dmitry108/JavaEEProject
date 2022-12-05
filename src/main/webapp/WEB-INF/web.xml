@@ -3,14 +3,5 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          id="WebApp_Id" version="4.0">
 
-  <servlet>
-    <servlet-name>Products</servlet-name>
-    <servlet-class>ru.home.aglar.servlets.ProductsPageServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Products</servlet-name>
-    <url-pattern>/products</url-pattern>
-  </servlet-mapping>
-
   <display-name>Archetype Created Web Application</display-name>
 </web-app>

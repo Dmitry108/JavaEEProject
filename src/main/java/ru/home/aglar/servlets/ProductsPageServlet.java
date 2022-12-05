@@ -4,17 +4,16 @@ import ru.home.aglar.domain.DBRepository;
 import ru.home.aglar.model.Product;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Stream;
 
+@WebServlet(name = "Products", urlPatterns = "/products")
 public class ProductsPageServlet extends HttpServlet {
-//    private static Logger logger = LoggerFactory.getLogger(ProductsPageServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
